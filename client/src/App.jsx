@@ -24,7 +24,7 @@ updateClickState() {
 }
 
 getLocationData() {
-  Axios.get('/api/location?id=49')
+  Axios.get(`/api/locations/${location.href.slice(31,-1)}`)
   .then(({data})=>{
     this.setState(
       {Name: data[0].hotel,

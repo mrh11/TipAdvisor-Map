@@ -10,9 +10,9 @@ const port = process.env.PORT || 3006;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use('/hotels/:hotelID', express.static(path.join(__dirname, '../client/dist')));
 
-app.get('/api/location', (req, res) => {
+app.get('/api/locations/:hotelID', (req, res) => {
   getInfoById(req.query, (err, data) => {
     if (err) {
       console.log(err); res.status(500).send();
