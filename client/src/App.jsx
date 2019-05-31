@@ -24,8 +24,7 @@ updateClickState() {
 }
 
 getLocationData() {
-  // Axios.get(`/api/locations/${location.href.slice(34, -1)}`)
-  Axios.get('/api/locations/55')
+  Axios.get(`/api/locations/${location.href.slice(34, -1)}`)
   .then(({data})=>{
 
     let name = data[0].hotel;

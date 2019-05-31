@@ -126,9 +126,7 @@
   }
 
   .R_sort-container {
-    display: block;
     content: "";
-    height: 4px;
     width: 100%;
     background: #078171;
     position: absolute;
