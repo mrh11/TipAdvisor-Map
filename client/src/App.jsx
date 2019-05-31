@@ -24,7 +24,7 @@ updateClickState() {
 }
 
 getLocationData() {
-  Axios.get(`/api/locations/${location.href.slice(34, -1)}`)
+  Axios.get(`http://54.156.169.151:3006/api/locations/${location.href.slice(32)}`)
   .then(({data})=>{
 
     let name = data[0].hotel;
@@ -74,7 +74,7 @@ render() {
                     </div>
                   </div>
                    <div className="R_wrapper">
-                   <div className="R_overview">
+                   <div className="R_overview">Overview
                     <img src="https://fec-map.s3.amazonaws.com/overview.png" alt=""/>
                    </div>
                    <div className="R_info">
@@ -89,8 +89,8 @@ render() {
                    <div className="R_attractions">attractions</div>
                    </div>
                   </div>
-                : <div>
-                    <div className="R_container">
+                : <div className="R_container">
+                    <div>
                     <button style={{right: '100px'}} onClick={(e)=>{ e.preventDefault(); this.setState({clickState: !this.state.clickState})}}>X</button>
                       <MyFancyComponent location={{lat: this.state.Lat, lng: this.state.Long}}/>
                     </div>

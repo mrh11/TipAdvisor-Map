@@ -6,9 +6,9 @@ import API_KEY from "../../../config.js";
 const Map = compose(
     withProps({
         googleMapURL: `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${API_KEY}`,
-        loadingElement: <div style={{ height: `100%` }} />,
+        loadingElement: <div style={{ height: `80%` }} />,
         containerElement: <div style={{ height: `500px` }} />,
-        mapElement: <div style={{ height: `100%` }} />
+        mapElement: <div style={{ height: `80%` }} />
     }),
     withScriptjs,
     withGoogleMap,

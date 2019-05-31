@@ -126,12 +126,46 @@
   }
 
   .R_sort-container {
+<<<<<<< HEAD
+=======
+    display: inline-block;
+>>>>>>> 556c93c48ac08b7612971abe20dedf21040d5996
     content: "";
     width: 100%;
-    background: #078171;
-    position: absolute;
-    top: 0;
+    background-color: white;
+    border-top: 4px #078171;
     left: 0;
+    border: 1px solid lightgray;
+    margin-bottom: 5%;
   }
+/*Position Absolute*/
   /* When you mouse over the container, fade in the overlay title */
+<<<<<<< HEAD
  
+=======
+
+
+  .proxy-body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow-x: hidden;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+   }
+
+   .proxy-component-container {
+    background-color: #f2f2f2;
+    padding: 5%;
+    margin: 0;
+    border: 0;
+   }
+   
+>>>>>>> 556c93c48ac08b7612971abe20dedf21040d5996
