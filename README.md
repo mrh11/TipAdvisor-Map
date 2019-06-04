@@ -4,7 +4,7 @@ The repo contains the map component of a trip advisor clone
 
 ## Getting Started
 
-To get started on the repo, first go to google's developer console and create an API key that uses Google Maps and Google Places API, store this in the root directory as an API_KEY.  Next create a .babelrc file in the root directory with the following:
+To get started on the repo, first go to google's developer console and create an API key that uses Google Maps and Google Places API, store this in the config.js file; when pushing be sure to .gitignore the config.js file in the future
 
 ```
 {
